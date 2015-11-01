@@ -1,16 +1,9 @@
 package time
 
-import (
-	"fmt"
-	"time"
-)
+import "time"
 
 // CurrentTime just return the current time nothing fancy
-func CurrentTime() string {
-	var x = time.Now().Format(time.UnixDate)
-	return x
-}
-
-func main() {
-	fmt.Println(CurrentTime())
+func CurrentTime(y string) string {
+	x := time.Now().Format(time.UnixDate)
+	return y + x
 }
