@@ -14,6 +14,8 @@ var _ = Describe("Time", func() {
 		Expect(CurrentTime("")).To(BeEquivalentTo(time.Now().Format(time.UnixDate)))
 	})
 	It("Must return a full string plus the current time", func() {
-		Expect(CurrentTime("The time is: ")).To(BeEquivalentTo("The time is: " + time.Now().Format(time.UnixDate)))
+		Expect(CurrentTime(
+			"The time is: ")).To(BeEquivalentTo(
+			"The time is: " + time.Now().Format(time.UnixDate)))
 	})
 })
