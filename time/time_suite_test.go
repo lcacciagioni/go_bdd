@@ -1,4 +1,4 @@
-package go_bdd_test
+package time_test
 
 import (
 	. "github.com/onsi/ginkgo"
@@ -7,7 +7,7 @@ import (
 	"testing"
 )
 
-func TestGoBdd(t *testing.T) {
+func TestTime(t *testing.T) {
 	RegisterFailHandler(Fail)
-	RunSpecs(t, "GoBdd Suite")
+	RunSpecs(t, "Time Suite")
 }
